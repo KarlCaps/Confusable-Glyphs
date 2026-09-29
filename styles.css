@@ -1,0 +1,345 @@
+/* =========================
+   BASIC SETTINGS
+   ========================= */
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #101827;
+
+    color: white;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background-color: #18243a;
+}
+
+
+header h1 {
+    font-size: 50px;
+
+    margin-bottom: 10px;
+
+    color: #63e6be;
+}
+
+
+header p {
+    font-size: 18px;
+
+    color: #cccccc;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+   ========================= */
+
+section {
+    width: 80%;
+
+    margin: auto;
+
+    padding: 60px 0;
+}
+
+
+h2 {
+    font-size: 35px;
+
+    color: #63e6be;
+}
+
+
+p {
+    color: #cccccc;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   INTRODUCTION
+   ========================= */
+
+.introduction {
+    text-align: center;
+}
+
+
+.introduction p {
+    max-width: 800px;
+
+    margin: 10px auto;
+}
+
+
+/* =========================
+   GLYPH SECTION
+   ========================= */
+
+.glyph-section {
+    text-align: center;
+}
+
+
+.instruction {
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   GLYPH CONTAINER
+   ========================= */
+
+.glyph-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================
+   GLYPH CARD
+   ========================= */
+
+.glyph-card {
+
+    background-color: #1b2942;
+
+    border: 1px solid #34445f;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    transition: 0.3s;
+}
+
+
+/* Card moves up when mouse is over it */
+
+.glyph-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #63e6be;
+}
+
+
+/* =========================
+   CARD TITLE
+   ========================= */
+
+.glyph-card h3 {
+
+    color: #63e6be;
+
+    font-size: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CHARACTERS
+   ========================= */
+
+.characters {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* =========================
+   BIG CHARACTERS
+   ========================= */
+
+.big-glyph {
+
+    display: block;
+
+    font-family: "Courier New", monospace;
+
+    font-size: 60px;
+
+    font-weight: bold;
+
+    color: white;
+
+    transition: 0.3s;
+}
+
+
+/* Character becomes bigger when
+   the card is hovered */
+
+.glyph-card:hover .big-glyph {
+
+    color: #63e6be;
+
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   CHARACTER NAMES
+   ========================= */
+
+.characters p {
+
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    color: #999999;
+}
+
+
+/* VS */
+
+.characters strong {
+
+    color: #7c8cff;
+
+    font-size: 12px;
+}
+
+
+.unicode {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background-color: #101827;
+
+    border-radius: 10px;
+
+    opacity: 0.3;
+
+    transition: 0.3s;
+}
+
+
+.glyph-card:hover .unicode {
+
+    opacity: 1;
+}
+
+
+.unicode p {
+
+    margin: 5px;
+
+    font-family: "Courier New", monospace;
+
+    color: #63e6be;
+
+    font-size: 14px;
+}
+
+
+.security {
+
+    background-color: #18243a;
+
+    width: auto;
+
+    padding-left: 10%;
+
+    padding-right: 10%;
+
+    text-align: center;
+}
+
+
+.security p {
+
+    max-width: 800px;
+
+    margin: 10px auto;
+}
+
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    background-color: #0b111d;
+}
+
+
+footer p {
+
+    color: #63e6be;
+
+    font-size: 14px;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .glyph-container {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    header h1 {
+
+        font-size: 38px;
+    }
+
+
+    section {
+
+        width: 90%;
+    }
+
+
+    h2 {
+
+        font-size: 28px;
+    }
+
+
+    .characters {
+
+        gap: 10px;
+    }
+
+
+    .big-glyph {
+
+        font-size: 40px;
+    }
+
+}
